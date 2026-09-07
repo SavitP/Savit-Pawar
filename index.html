@@ -1,49 +1,309 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/afd00bcdf6.js" crossorigin="anonymous"></script>
-        <title>Savit Pawar</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="nav">
-            <a class="navbut">Savit Pawar</a>
-            <div class="rightnav">
-                <a class="navbut">About Me</a>
-                <a href=projects.html class="navbut">Projects</a>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savit Pawar</title>
+    <meta name="description" content="Savit Pawar. Computer science student and researcher at the University of Washington. ML systems, agentic tooling, full-stack. Selected work, experience, and résumé.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,400..900&family=Hanken+Grotesk:wght@400..700&family=Martian+Mono:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FBFAF6'/%3E%3Crect x='6' y='0' width='2' height='32' fill='%23BE3A24'/%3E%3Ctext x='13' y='23' font-family='Georgia,serif' font-size='20' font-weight='700' fill='%231B1A16'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <a class="skip" href="#about">Skip to content</a>
+
+    <header class="topbar">
+        <a class="wordmark" href="#top">Savit&nbsp;Pawar</a>
+        <nav class="topnav" aria-label="Sections">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#work">Work</a>
+            <a href="#resume">Résumé</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme" type="button" aria-label="Switch color theme" aria-pressed="false">
+            <span class="theme-dot" aria-hidden="true"></span>
+            <span class="theme-label">Light</span>
+        </button>
+    </header>
+
+    <main class="sheet" id="top">
+
+        <!-- ============ HERO / SPEC BLOCK ============ -->
+        <section class="entry hero" aria-labelledby="hero-name">
+            <div class="tab" aria-hidden="true"><span>Index</span></div>
+            <div class="body">
+                <p class="eyebrow">Personal record · updated <span data-updated>2026</span></p>
+                <h1 class="hero-name" id="hero-name">Savit Pawar</h1>
+
+                <dl class="spec" aria-label="Summary">
+                    <div class="spec-row">
+                        <dt>Role</dt>
+                        <dd>CS researcher &amp; student</dd>
+                    </div>
+                    <div class="spec-row">
+                        <dt>Location</dt>
+                        <dd>Seattle, Washington <span class="dim">· 47.66°N 122.31°W</span></dd>
+                    </div>
+                    <div class="spec-row">
+                        <dt>Studying</dt>
+                        <dd>B.S. Computer Science, University of Washington</dd>
+                    </div>
+                    <div class="spec-row">
+                        <dt>Standing</dt>
+                        <dd>3.91 GPA <span class="dim">· class of 2028</span></dd>
+                    </div>
+                    <div class="spec-row">
+                        <dt>Status</dt>
+                        <dd><span class="live" aria-hidden="true"></span>Open to internships &amp; research</dd>
+                    </div>
+                    <div class="spec-row">
+                        <dt>Focus</dt>
+                        <dd>ML systems · agentic tooling · full-stack</dd>
+                    </div>
+                </dl>
+
+                <div class="hero-cta">
+                    <a class="btn" href="#work">See selected work</a>
+                    <a class="btn btn-quiet" href="PawarSavit.pdf" target="_blank" rel="noopener">Résumé (PDF)&nbsp;<span aria-hidden="true">↗</span></a>
+                </div>
             </div>
-        </div>
-        <div class="top">
-            <div class="ihalf">
-                <img src="Photo.jpeg" alt="A picture od Savit Pawar" class="photo">
-                <h2 class="name">Savit Pawar</h2>
-                <div class="linkarea">
-                    <a href="https://www.linkedin.com/in/savit-pawar-564398295/" class="link">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <p class="icon">LinkedIn</p>
-                    </a>
-                    <a href="https://github.com/Ironboss456" class="link">
-                        <i class="fa-brands fa-github"></i>
-                        <p class="icon">GitHub</p>
-                    </a>
-                    <a href="mailto:pawar.savit@gmail.com" class="link">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p class="icon">Email</p>
-                    </a>
-                </div>  
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="entry" id="about" aria-labelledby="about-h">
+            <div class="tab" aria-hidden="true"><span>About</span></div>
+            <div class="body">
+                <h2 class="entry-title" id="about-h">About</h2>
+                <div class="prose">
+                    <p>Hello, and welcome. I'm a computer science student at the University of Washington,
+                        where I also do research in the Programming Languages &amp; Software Engineering lab
+                        and TA a systems course.</p>
+                    <p>I work across the stack, lately on agentic LLM tooling, ML systems, and full-stack
+                        products. I'm drawn to problems where careful engineering makes something
+                        measurably better, and most of what I learn ends up as a project. A few are logged below.</p>
+                    <p>Outside of computer science I follow Formula&nbsp;1 and football closely.</p>
+                </div>
             </div>
-            <div class="rhalf">
-                <p>Hello! Welcome to my website.</p>
-                <p>I am currently a freshman computer science student at the University of Washington.</p>
-                <p>I live in Bellevue, Washington and I have a strong interest in solving problems in the real world 
-                    through code. I am partiularly excited about how the advancement of AI can be used to make 
-                    the world a better place. I love building projects, many of which are showcased on this site.
-                </p>
-                <p>Outside of computer science I love watching sports like Formula 1 and Football.</p>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section class="entry" id="experience" aria-labelledby="experience-h">
+            <div class="tab" aria-hidden="true"><span>Experience</span></div>
+            <div class="body">
+                <h2 class="entry-title" id="experience-h">Experience</h2>
+
+                <ol class="xp">
+                    <li class="xp-item">
+                        <div class="xp-when">Jun 2026 – Present</div>
+                        <div class="xp-what">
+                            <h3 class="xp-role">Undergraduate Researcher</h3>
+                            <p class="xp-org">University of Washington · PLSE Lab</p>
+                            <p class="xp-note">
+                                Building an agentic LLM pipeline that translates C into byte-accurate,
+                                test-verified Rust, with a reproducible Google&nbsp;Test harness for equivalence
+                                checks. Extended an LLVM call-graph tool to catch indirect function-pointer
+                                call sites the standard pass misses.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="xp-item">
+                        <div class="xp-when">Jun 2026 – Present</div>
+                        <div class="xp-what">
+                            <h3 class="xp-role">Teaching Assistant</h3>
+                            <p class="xp-org">University of Washington · Computer Science</p>
+                            <p class="xp-note">
+                                Lead weekly quiz sections and discussions for a 40-student systems course,
+                                grade labs and quizzes, and answer questions on the course forum.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="xp-item">
+                        <div class="xp-when">Nov 2025 – Jun 2026</div>
+                        <div class="xp-what">
+                            <h3 class="xp-role">Lab Systems Intern</h3>
+                            <p class="xp-org">University of Washington · SEAL Lab</p>
+                            <p class="xp-note">
+                                Led a Claude Code chatbot build that cut per-person weekly reporting from 45
+                                to 10 minutes across a 50-person lab, and maintained two lab-wide tracking
+                                systems for a measured 37% efficiency gain.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="xp-item">
+                        <div class="xp-when">Sep 2025 – Jun 2028</div>
+                        <div class="xp-what">
+                            <h3 class="xp-role">B.S. Computer Science</h3>
+                            <p class="xp-org">University of Washington · 3.91 GPA</p>
+                            <p class="xp-note">
+                                Coursework: Data Structures &amp; Parallelism, Hardware/Software Interface,
+                                Discrete Mathematics, Linear Algebra, Calculus 3, Intro to Software Engineering.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
             </div>
-        </div>
-        <script src="script.js"></script>
-    </body>
+        </section>
+
+        <!-- ============ SELECTED WORK ============ -->
+        <section class="entry" id="work" aria-labelledby="work-h">
+            <div class="tab" aria-hidden="true"><span>Work</span></div>
+            <div class="body">
+                <h2 class="entry-title" id="work-h">Selected work</h2>
+                <p class="entry-lede">Projects I've built or contributed to.</p>
+
+                <ol class="projects">
+                    <!-- PROJECT ENTRY: duplicate this <li> block for each new project -->
+                    <li class="project">
+                        <a class="project-link" href="https://jvarzali.github.io/Sokoban-Environment/" target="_blank" rel="noopener">
+                            <div class="project-head">
+                                <h3 class="project-name">Sokoban Environment</h3>
+                                <span class="project-go" aria-hidden="true">↗</span>
+                            </div>
+                            <div class="project-grid">
+                                <dl class="project-spec">
+                                    <div><dt>Result</dt><dd>1st in track · 2nd overall</dd></div>
+                                    <div><dt>Stack</dt><dd>Python · JavaScript · Three.js · BFS</dd></div>
+                                    <div><dt>Role</dt><dd>Contributor</dd></div>
+                                </dl>
+                                <p class="project-desc">
+                                    A reinforcement-learning benchmark that tests how well LLM agents perceive
+                                    3D space, with elevation and box-pushing mechanics, BFS-verified solvable
+                                    maps, and a 2D/3D browser viewer that replays an agent's decisions move by
+                                    move. Won its track and placed second overall at a Google-sponsored,
+                                    Google-judged hackathon.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project">
+                        <a class="project-link" href="https://github.com/jeonjas25/Talus" target="_blank" rel="noopener">
+                            <div class="project-head">
+                                <h3 class="project-name">Talus</h3>
+                                <span class="project-go" aria-hidden="true">↗</span>
+                            </div>
+                            <div class="project-grid">
+                                <dl class="project-spec">
+                                    <div><dt>Result</dt><dd>0.90 AUC-ROC</dd></div>
+                                    <div><dt>Stack</dt><dd>Python · XGBoost · scikit-learn · SHAP · Earth Engine</dd></div>
+                                    <div><dt>Role</dt><dd>Contributor</dd></div>
+                                </dl>
+                                <p class="project-desc">
+                                    A statewide landslide-susceptibility model for Washington at 10&nbsp;m
+                                    resolution. XGBoost with spatial cross-validation over 450M pixels and 8
+                                    features from 7 geospatial sources; on a blind holdout of the 2014 Oso zone
+                                    it flagged 46.8% of landslide pixels as high risk against 15% of stable
+                                    terrain. SHAP ranked precipitation and elevation as the top predictors.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project">
+                        <a class="project-link" href="https://launchhq.space/" target="_blank" rel="noopener">
+                            <div class="project-head">
+                                <h3 class="project-name">LaunchHQ</h3>
+                                <span class="project-go" aria-hidden="true">↗</span>
+                            </div>
+                            <div class="project-grid">
+                                <dl class="project-spec">
+                                    <div><dt>Result</dt><dd>40+ users · 20+ live waitlists</dd></div>
+                                    <div><dt>Stack</dt><dd>Next.js · Vercel · Neon · Stripe · Resend</dd></div>
+                                    <div><dt>Role</dt><dd>Creator</dd></div>
+                                </dl>
+                                <p class="project-desc">
+                                    A full-stack SaaS platform for launch waitlists, with an embeddable signup
+                                    widget, a referral system, custom domains, and Stripe-metered billing.
+                                    Grew to 40+ users and 20+ live waitlists, and ranked launchhq.space onto
+                                    Google's first page through hands-on SEO.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ RÉSUMÉ + SKILLS ============ -->
+        <section class="entry" id="resume" aria-labelledby="resume-h">
+            <div class="tab" aria-hidden="true"><span>Résumé</span></div>
+            <div class="body">
+                <h2 class="entry-title" id="resume-h">Résumé</h2>
+                <p class="entry-lede">The tools I reach for, and the full one-page document.</p>
+
+                <dl class="skills" aria-label="Technical skills">
+                    <div class="spec-row">
+                        <dt>Languages</dt>
+                        <dd>Java · Python · JavaScript · SQL · Rust · C · HTML/CSS</dd>
+                    </div>
+                    <div class="spec-row">
+                        <dt>Frameworks</dt>
+                        <dd>React · Next.js · Tailwind CSS · Streamlit</dd>
+                    </div>
+                    <div class="spec-row">
+                        <dt>AI / ML</dt>
+                        <dd>XGBoost · scikit-learn · SHAP · pandas · NumPy · Hugging Face · function calling · prompt engineering</dd>
+                    </div>
+                    <div class="spec-row">
+                        <dt>Tools</dt>
+                        <dd>Git · Copilot · Claude Code · VS Code · Google Test · Power BI</dd>
+                    </div>
+                </dl>
+
+                <div class="resume-card">
+                    <div class="resume-meta">
+                        <span class="resume-file">PawarSavit.pdf</span>
+                        <span class="dim">PDF · opens in a new tab</span>
+                    </div>
+                    <div class="resume-actions">
+                        <a class="btn" href="PawarSavit.pdf" target="_blank" rel="noopener">View résumé&nbsp;<span aria-hidden="true">↗</span></a>
+                        <a class="btn btn-quiet" href="PawarSavit.pdf" download>Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="entry" id="contact" aria-labelledby="contact-h">
+            <div class="tab" aria-hidden="true"><span>Contact</span></div>
+            <div class="body">
+                <h2 class="entry-title" id="contact-h">Contact</h2>
+                <p class="entry-lede">The fastest way to reach me is email. I read everything.</p>
+                <ul class="contact-list">
+                    <li>
+                        <a href="mailto:pawar.savit@gmail.com">
+                            <span class="contact-k">Email</span>
+                            <span class="contact-v">pawar.savit@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/savit-pawar-564398295/" target="_blank" rel="noopener">
+                            <span class="contact-k">LinkedIn</span>
+                            <span class="contact-v">savit-pawar <span aria-hidden="true">↗</span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SavitP" target="_blank" rel="noopener">
+                            <span class="contact-k">GitHub</span>
+                            <span class="contact-v">SavitP <span aria-hidden="true">↗</span></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="colophon">
+        <span>Set in Archivo, Hanken Grotesk &amp; Martian Mono.</span>
+        <span>© <span data-year>2026</span> Savit Pawar. Hand-built, no template.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
