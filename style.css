@@ -11,7 +11,7 @@
     --dim:    #96928600;      /* used via color-mix fallbacks below */
     --grid:   #E9E6DB;
     --hair:   #DAD6C8;
-    --rule:   #BE3A24;
+    --rule:   #5B3A78;
     --pen:    #2C4C8E;
     --pen-hi: #38508A;
 
@@ -36,7 +36,7 @@
         --faded:  #9C988A;
         --grid:   #252319;
         --hair:   #302D22;
-        --rule:   #E0563C;
+        --rule:   #8B62C4;
         --pen:    #86AEEC;
         --pen-hi: #A2C1F2;
         color-scheme: dark;
@@ -50,7 +50,7 @@
     --faded:  #9C988A;
     --grid:   #252319;
     --hair:   #302D22;
-    --rule:   #E0563C;
+    --rule:   #8B62C4;
     --pen:    #86AEEC;
     --pen-hi: #A2C1F2;
     color-scheme: dark;
